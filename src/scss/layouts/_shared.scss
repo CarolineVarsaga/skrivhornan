@@ -1,4 +1,25 @@
 body {
     background-color: color(whiteColor);
     font-family: $primary-font;
+    padding-top: 10px;
+
+    @include response(md) {
+        padding-top: 30px;
+    }
+
+    .divider {
+        width: 92%;
+        min-width: 310px;
+        max-width: 510px;
+        height: 1px;
+        background-color: color(blackColor);
+
+        @include response(md) {
+            max-width: 510px;
+        }
+
+        @include response(lg) {
+            max-width: 700px;
+        }
+    }
 }
