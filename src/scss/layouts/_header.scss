@@ -1,1 +1,49 @@
+.header {
+    @include flexCenter($ai: center, $jc: center, $fd: column, $gap: 10px);
+    @include response(md) {
+        @include flexCenter($ai: center, $jc: center, $fd: column, $gap: 30px);
+    }
+    
+    .logo {
+        width: 200px;
 
+        @include response(md) {
+            width: 282px;
+        }
+    }    
+
+    .navbar {
+        width: 92%;
+        min-width: 290px;  
+        max-width: 500px;
+
+        @include response(lg) {
+            max-width: 660px;
+        }
+
+        .menu-list {
+            @include flexCenter($ai: center, $jc: space-between, $fd: row, $gap: 0);
+            
+            .list-item {
+                list-style: none;
+
+                .list-item-name {
+                    text-decoration: none;
+                    color: color(blackColor); 
+                    font-size: size(sm);             
+                    
+                    @include response(md) {
+                        font-size: size(lg);
+
+                        &:hover {
+                            text-decoration: underline;
+                            text-decoration-color: color(hoverColor);
+                        }
+                    }
+                }                
+            }
+        }
+    }
+
+    
+}
