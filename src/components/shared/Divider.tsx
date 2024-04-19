@@ -1,6 +1,6 @@
 const Divider = () => {
   return (
-    <div className="divider"></div>
+    <div className="divider presentation-divider"></div>
   );
 };
 
