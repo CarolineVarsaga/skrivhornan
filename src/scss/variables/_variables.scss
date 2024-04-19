@@ -24,9 +24,9 @@ $font-sizes: (
     @return map-get($font-sizes, $size);
 }
 
-$debugging: false;
+$debugging: true;
 
-div {
+div, article, h1, img, button {
     @if $debugging {
         outline: 1px solid hotpink;
     }
