@@ -1,5 +1,7 @@
-@import 'vendor/normalize'; 
+@import 'vendor/normalize';
+@import 'mixins/media'; 
 @import 'mixins/mixins';
 @import 'variables/variables';
+@import 'layouts/shared';
 @import 'layouts/header'; 
 @import 'layouts/presentation'; 
