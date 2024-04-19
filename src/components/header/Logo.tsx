@@ -1,4 +1,4 @@
-import Logo from '../../assets/svg/skrivhornan-svg.svg';
+import Logo from '../../assets/svg/logo.svg';
 
 const LogoComponent = () => {
   return (
