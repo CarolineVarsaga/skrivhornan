@@ -12,9 +12,8 @@ const Presentation = () => {
 
   return (
     <section className="presentation-section">
-        <img className="presentation-background" src={isDesktop ?  PresentationBackgroundDesktop : PresentationBackground} alt="turkos bakgrundsfärg" width="744" height="914"/>
+        <img className="presentation-background" src={isDesktop ?  PresentationBackgroundDesktop : PresentationBackground} alt="turkos bakgrundsfärg" width={isDesktop ?  "1440" : "744"} height="914"/>
         <Article />
-        <button className='contact-button'>Kontakta mig</button>
     </section>    
   );
 };
