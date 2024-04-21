@@ -10,6 +10,11 @@
         width: 100%;
         min-width: 330px; 
         max-width: 1023px;
+
+        @include response(lg) {
+            top: 0; 
+            max-width: fit-content;
+        }
     }
 
     .presentation-article {
@@ -17,41 +22,75 @@
         height: 700px;
         top: 0;
         @include flexCenter($ai: center, $jc: center, $fd: column, $gap: 30px);
-        color: color(whiteColor); 
         z-index: 2;
         width: 100%;
         margin-bottom: 30px;
 
-        .photo {            
+        @include response(lg) {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            //@include flexCenter($ai: center, $jc: space-between, $fd: row, $gap: 30px);
+            padding-left: 30px;
+          //  width: 90%; 
+        }
+
+        .photo {                     
             width: 80%;
-           // min-width: 200px;
             max-width: 300px;
             height: auto;
             filter: drop-shadow(8px 8px 10px #00000080);
+
+            @include response(lg) {
+                grid-column: 2 / span 5;  
+                max-width: 489px;
+            }
         }
 
-        h1 {     
-            font-size: size(lg);
+        .article-text-container {
+            @include flexCenter($ai: center, $jc: center, $fd: column, $gap: 30px);
+            width: 100%;
+            min-width: 310px;
 
-            @include response(md) {
-                font-size: size(xl);
-            }            
-        }
+            @include response(lg) {
+                grid-column: 7 / 13; 
+                @include flexCenter($ai: start, $jc: center, $fd: column, $gap: 30px);
+            }
 
-        .presentation-divider {
-            background-color: color(whiteColor);
-        }
+            h1 {     
+                font-size: size(lg);
+                font-weight: 400;
 
-        .presentation-paragraph {
-            width: 80%;
-            font-size: size(sm);
-            max-width: 400px;
-        }
-    }
-    .contact-button {
-        position: absolute; 
-        bottom: -4rem; 
-    }
+                @include response(md) {
+                    font-size: size(xl);
+                }            
+            }
 
+            .presentation-divider {
+                width: 85%;
+            }
+
+            .presentation-paragraph {
+                width: 90%;
+                font-size: size(sm);
+                max-width: 400px;
+                padding-left: 0.5rem; 
+                padding-right: 0.5rem; 
+
+                @include response(md) {
+                    padding: 0; 
+                }
+            }
+
+            .contact-button {
+                position: absolute; 
+                bottom: -2rem; 
+                @include response(lg) {
+                   position: relative;
+                   
+                } 
+            }  
+        }   
+    }        
     
+     
 }
