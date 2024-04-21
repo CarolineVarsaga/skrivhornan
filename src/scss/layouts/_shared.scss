@@ -1,8 +1,7 @@
 body {
     background-color: color(whiteColor);
     font-family: $primary-font;
-    padding-top: 10px;
-    
+    padding-top: 10px;    
 
     @include response(md) {
         padding-top: 30px;
@@ -29,7 +28,7 @@ body {
         width: 180px;
         height: 50px;
         background-color: color(secondary);
-        color: color(whiteColor);
+       // color: color(whiteColor);
         font-size: size(sm);
         border: none;
         filter: drop-shadow(4px 4px 4px #00000080);
@@ -37,7 +36,7 @@ body {
 
         &:hover {
             background-color: color(hoverColor);
-            color: color(blackColor); 
+            color: color(whiteColor); 
         }
     }
 }
