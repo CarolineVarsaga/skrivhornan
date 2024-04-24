@@ -5,7 +5,7 @@
 
     .presentation-background {
         position: absolute;
-        top: -5rem;
+        top: 0;
         object-fit: cover;
         width: 100%;
         min-width: 330px; 
@@ -63,6 +63,10 @@
                 @include response(md) {
                     font-size: size(xl);
                 }            
+            }
+
+            h2 {
+                font-weight: 400;
             }
 
             .presentation-divider {
