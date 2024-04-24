@@ -7,6 +7,7 @@ const Article = () => {
         <img className="photo" src={Selfportrait} alt="profilbild av Torbjörn Vårsaga" width="489" height="521" />
         <div className='article-text-container'>
           <h1>Kommunikatör</h1>
+          <h2>Torbjörn Vårsaga</h2>
           <Divider />
           <p className='presentation-paragraph'>
               Ord som träffar rakt i hjärtat på dig kan falla 
