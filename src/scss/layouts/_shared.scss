@@ -1,7 +1,7 @@
 body {
     background-color: color(whiteColor);
     font-family: $primary-font;
-    padding-top: 10px;    
+    padding-top: 10px; 
 
     @include response(md) {
         padding-top: 30px;
@@ -36,7 +36,10 @@ body {
 
         &:hover {
             background-color: color(hoverColor);
-            color: color(whiteColor); 
+            text-decoration: underline;
+            //color: color(whiteColor); 
+          //  border: 1px solid color(blackColor); 
+
         }
     }
 }
