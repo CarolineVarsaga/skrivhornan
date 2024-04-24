@@ -2,9 +2,11 @@ $colors: (
     whiteColor: #FDFFF1,
     primary: #91C7B1,
     //primary: #108F88,
-    secondary: #E3D081, 
+    secondary: #f7d85d,
+    //secondary: #E3D081, 
     //secondary: #DF7800,
-    hoverColor: #AF9C51,
+    hoverColor: #feba00,
+    //hoverColor: #AF9C51,
     // hoverColor: #FFA53C,
     blackColor: #000000
 );
@@ -27,7 +29,7 @@ $font-sizes: (
     @return map-get($font-sizes, $size);
 }
 
-$debugging: true;
+$debugging: false;
 
 div, article, h1, img, button {
     @if $debugging {
