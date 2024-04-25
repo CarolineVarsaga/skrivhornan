@@ -1,0 +1,13 @@
+.portfolio-section {
+    .portfolio-background {
+        background-color: color(primary);
+        min-height: 500px;
+        @include flexCenter($ai: center, $jc: flex-start, $fd: column, $gap: 30px);
+
+        .portfolio-heading {
+            font-size: size(xl);
+            font-weight: 400;
+        }
+
+    }
+}
