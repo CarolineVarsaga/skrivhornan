@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lager_2" data-name="Lager 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 52 52">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: url(#turkos_grön-2);
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: url(#turkos_grön);
+        stroke-width: 0px;
+      }
+    </style>
+    <linearGradient id="turkos_grön" data-name="turkos grön" x1="38.71" y1="12.38" x2="162.41" y2="12.38" gradientTransform="translate(-11.07 16.67) rotate(-9.63) scale(.35 1.19)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4abcc2"/>
+      <stop offset=".14" stop-color="#009482"/>
+      <stop offset=".33" stop-color="#6dc1af"/>
+      <stop offset=".61" stop-color="#7ec185"/>
+      <stop offset=".82" stop-color="#bdd99f"/>
+      <stop offset=".98" stop-color="#98c21f"/>
+    </linearGradient>
+    <linearGradient id="turkos_grön-2" data-name="turkos grön" x1="0" y1="26" x2="52" y2="26" gradientTransform="matrix(1,0,0,1,0,0)" xlink:href="#turkos_grön"/>
+  </defs>
+  <g id="Lager_1-2" data-name="Lager 1">
+    <path class="cls-2" d="M25.48,32.04c3.81-4.16,7.68-8.36,11.51-10.43,14.91-8.05,13.18,28.47,13.01,26.42-.11-1.35,0-17.85-3.81-28.47-2.85-7.94-8.97-8.36-11.08-7.57-4.1,1.55-8.17,5.43-11.7,10.56l3.13-4.03c-3.81,4.16-7.66,8.5-11.49,10.56C.14,37.14,1.87.62,2.04,2.67c.11,1.35,0,17.85,3.81,28.47,2.85,7.94,8.97,8.36,11.08,7.57,4.1-1.55,6.59-3.87,10.24-8.75"/>
+    <rect class="cls-1" x="1" y="1" width="50" height="50"/>
+  </g>
+</svg>

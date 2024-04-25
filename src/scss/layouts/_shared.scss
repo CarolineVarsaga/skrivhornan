@@ -1,7 +1,7 @@
 body {
     background-color: color(whiteColor);
     font-family: $primary-font;
-    padding-top: 10px;
+    padding-top: 10px; 
 
     @include response(md) {
         padding-top: 30px;
@@ -20,6 +20,26 @@ body {
 
         @include response(lg) {
             max-width: 700px;
+        }
+    }
+
+    button {
+        border-radius: 10px;
+        width: 180px;
+        height: 50px;
+        background-color: color(secondary);
+       // color: color(whiteColor);
+        font-size: size(sm);
+        border: none;
+        filter: drop-shadow(4px 4px 4px #00000080);
+        cursor: pointer;
+
+        &:hover {
+            background-color: color(hoverColor);
+            text-decoration: underline;
+            //color: color(whiteColor); 
+          //  border: 1px solid color(blackColor); 
+
         }
     }
 }

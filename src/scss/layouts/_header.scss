@@ -5,10 +5,15 @@
     }
     
     .logo {
-        width: 200px;
+        width: 300px;
+        height: auto;
 
         @include response(md) {
-            width: 282px;
+            width: 400px
+        }
+
+        @include response(lg) {
+            width: 592px;
         }
     }    
 
@@ -27,18 +32,38 @@
             .list-item {
                 list-style: none;
 
-                .list-item-name {
+                .list-item-name {                    
+                    position: relative;
                     text-decoration: none;
                     color: color(blackColor); 
-                    font-size: size(sm);             
+                    font-size: size(sm);      
                     
                     @include response(md) {
                         font-size: size(lg);
-
-                        &:hover {
-                            text-decoration: underline;
-                            text-decoration-color: color(hoverColor);
+                        &::before,
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: -5px;
+                            width: 0;
+                            height: 2px;
+                            background-color: color(hoverColor);
+                            transition: width 0.3s ease;
                         }
+                        
+                        &::before {
+                            right: 50%;
+                        }
+                        
+                        &::after {
+                            left: 50%;
+                        }
+                        
+                        &:hover::before,
+                        &:hover::after {
+                            width: 50%;
+                            transition: width 0.3s ease;
+                        }   
                     }
                 }                
             }

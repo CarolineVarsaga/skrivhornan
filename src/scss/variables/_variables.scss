@@ -1,8 +1,13 @@
 $colors: (
     whiteColor: #FDFFF1,
-    primary: #108F88,
-    secondary: #DF7800,
-    hoverColor: #FFA53C,
+    primary: #91C7B1,
+    //primary: #108F88,
+    secondary: #f7d85d,
+    //secondary: #E3D081, 
+    //secondary: #DF7800,
+    hoverColor: #feba00,
+    //hoverColor: #AF9C51,
+    // hoverColor: #FFA53C,
     blackColor: #000000
 );
 
@@ -26,7 +31,7 @@ $font-sizes: (
 
 $debugging: false;
 
-div {
+div, article, h1, img, button {
     @if $debugging {
         outline: 1px solid hotpink;
     }

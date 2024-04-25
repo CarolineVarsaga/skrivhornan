@@ -1,0 +1,57 @@
+.about-section {
+    background-color: color(whiteColor);
+    color: color(blackColor); 
+    min-height: 300px;
+    z-index: 1;
+    position: relative;
+    top: 5rem; 
+    padding: 30px;
+
+    @include response(lg) {
+        padding-left: 100px; 
+        padding-right: 100px;    
+        @include flexCenter($ai: center, $jc: center, $fd: column, $gap: 30px);          
+    }
+
+    .about-frame {
+        border: 1px solid color(blackColor); 
+        padding: 20px; 
+        gap: 20px; 
+        @include flexCenter($ai: flex-start, $jc: center, $fd: column, $gap: 30px);
+
+        @include response(lg) {
+            @include flexCenter($ai: center, $jc: center, $fd: row, $gap: 0);
+            padding: 30px;
+            width: 90%;
+
+           .about-heading {
+                font-size: size(xl);
+                text-align: center;
+                width: 30%;
+            }
+
+           .divider {
+                transform: rotate(90deg);
+                width: 5%;
+            }  
+
+           .text-container {
+                width: 65%;
+            }
+        }        
+
+        .about-heading {
+            font-weight: 400;
+        }
+
+        .divider {
+            min-width: 200px;
+        } 
+
+        .text-container {
+            @include flexCenter($ai: flex-start, $jc: center, $fd: column, $gap: 10px);
+        }
+
+    }
+
+}

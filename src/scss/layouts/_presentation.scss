@@ -1,0 +1,94 @@
+.presentation-section {
+    position: relative;
+    @include flexCenter($ai: center, $jc: center, $fd: row, $gap: 10px);
+    height: 700px;
+
+    .presentation-background {
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        width: 100%;
+        min-width: 330px; 
+        max-width: 1023px;
+
+        @include response(lg) {
+            top: 0; 
+            max-width: fit-content;
+        }
+    }
+
+    .presentation-article {
+        position: absolute;
+        height: 700px;
+        top: 0;
+        @include flexCenter($ai: center, $jc: center, $fd: column, $gap: 30px);
+        z-index: 2;
+        width: 100%;
+        margin-bottom: 30px;
+
+        @include response(lg) {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            padding-left: 30px; 
+        }
+
+        .photo {                     
+            width: 80%;
+            max-width: 300px;
+            height: auto;
+            filter: drop-shadow(8px 8px 10px #00000080);
+
+            @include response(lg) {
+                grid-column: 2 / span 5;  
+                max-width: 489px;
+            }
+        }
+
+        .article-text-container {
+            @include flexCenter($ai: center, $jc: center, $fd: column, $gap: 30px);
+            width: 100%;
+            min-width: 310px;
+
+            @include response(lg) {
+                grid-column: 7 / 13; 
+                @include flexCenter($ai: start, $jc: center, $fd: column, $gap: 30px);
+            }
+
+            h1 {     
+                font-size: size(xl);
+                font-weight: 400;          
+            }
+
+            h2 {
+                font-weight: 400;
+            }
+
+            .presentation-divider {
+                width: 85%;
+            }
+
+            .presentation-paragraph {
+                width: 90%;
+                font-size: size(sm);
+                max-width: 400px;
+                padding-left: 0.5rem; 
+                padding-right: 0.5rem; 
+
+                @include response(md) {
+                    padding: 0; 
+                }
+            }
+
+            .contact-button {
+                position: absolute; 
+                bottom: -2rem; 
+                @include response(lg) {
+                   position: relative;
+                   
+                } 
+            }  
+        }   
+    }        
+    
+     
+}
