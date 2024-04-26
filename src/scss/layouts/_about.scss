@@ -20,7 +20,8 @@
         @include response(lg) {
             @include flexCenter($ai: center, $jc: center, $fd: row, $gap: 0);
             padding: 30px;
-            width: 90%;
+            width: 80%;
+            min-width: 980px; 
 
            .about-heading {
                 font-size: size(xl);
