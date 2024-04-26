@@ -1,4 +1,4 @@
-import LogoComponent from "./Logo";
+import LogoComponent from "../shared/Logo";
 import Divider from "../shared/Divider";
 import Navbar from "./Navbar";
 
