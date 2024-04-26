@@ -1,7 +1,7 @@
 body {
     background-color: color(whiteColor);
     font-family: $primary-font;
-    padding-top: 10px; 
+    padding-top: 30px; 
 
     @include response(md) {
         padding-top: 30px;

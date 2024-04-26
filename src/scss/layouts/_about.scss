@@ -1,11 +1,9 @@
 .about-section {
     background-color: color(whiteColor);
     color: color(blackColor); 
-    min-height: 300px;
     z-index: 1;
-    position: relative;
-    top: 5rem; 
     padding: 30px;
+    font-size: size(sm);
 
     @include response(lg) {
         padding-left: 100px; 
@@ -22,7 +20,8 @@
         @include response(lg) {
             @include flexCenter($ai: center, $jc: center, $fd: row, $gap: 0);
             padding: 30px;
-            width: 90%;
+            width: 80%;
+            min-width: 980px; 
 
            .about-heading {
                 font-size: size(xl);

@@ -3,6 +3,7 @@ import Presentation from "./components/presentation/Presentation";
 import { useContext } from 'react';
 import Context from './components/context/Context';
 import About from "./components/about-section/About";
+import Portfolio from "./components/portfolio-section/Portfolio";
 
 function App() {
   const context = useContext(Context);
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Presentation />
       <About />
+      <Portfolio />
     </>
   )
 }
