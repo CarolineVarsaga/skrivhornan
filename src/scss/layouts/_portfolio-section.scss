@@ -1,5 +1,6 @@
 .portfolio-section {
     .portfolio-background {
+        padding-top: 30px; 
         background-color: color(primary);
         min-height: 500px;
         @include flexCenter($ai: center, $jc: flex-start, $fd: column, $gap: 30px);
@@ -9,5 +10,50 @@
             font-weight: 400;
         }
 
+        .portfolio-card-container {
+            @include flexCenter($ai: center, $jc: center, $fd: column, $gap: 30px);
+            @include response(lg) {
+                @include flexCenter($ai: center, $jc: center, $fd: row, $gap: 50px);
+            }
+
+            .portfolio-card {
+                @include flexCenter($ai: center, $jc: flex-start, $fd: column, $gap: 8px);
+                background-color: color(whiteColor);
+                height: 450px; 
+                width: 300px;
+                filter: drop-shadow(2px 2px 4px #00000080);
+                cursor: pointer;
+
+                .portfolio-card-image-container {
+                    height: 300px;
+                    width: 100%;
+                    border: 1px solid blue; 
+                    overflow: hidden;
+
+                    & img {
+                        transition: transform 0.3s ease;
+                        width: 100%;
+                    }
+
+                    &:hover img {
+                        transform: scale(1.1);
+                    }
+
+                }
+
+                .portfolio-card-heading {
+                    font-size: size(lg);
+                }
+
+                .portfolio-card-description {
+                    font-size: size(sm);
+                    padding-left: 10px; 
+                    padding-right: 10px; 
+                    padding-bottom: 20px; 
+                }
+            }
+
+        }
+        
     }
 }
