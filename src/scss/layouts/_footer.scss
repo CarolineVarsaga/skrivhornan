@@ -1,0 +1,40 @@
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include flexCenter($ai: center, $jc: center, $fd: column, $gap: 30px);
+
+    @include response(md) { 
+        margin: 0; 
+    }
+    
+    .footer-container {
+        width: 100%;
+        @include flexCenter($ai: center, $jc: center, $fd: column, $gap: 30px);
+        
+        .footer-information {
+            @include response(md) {      
+                width: 70%;       
+                max-width: 700px;   
+                @include flexCenter($ai: center, $jc: space-between, $fd: row, $gap: 30px);
+            }
+
+            .logo {
+                width: 250px;
+                margin-top: -20px;
+                margin-bottom: 20px;
+            }
+    
+            .footer-contact-heading {
+                font-size: size(md);
+                text-align: center;
+            }
+        
+            .footer-contact {
+                font-size: size(sm);
+                @include flexCenter($ai: center, $jc: center, $fd: column, $gap: 8px);
+                padding-top: 8px;
+                padding-bottom: 30px;
+            }
+        }        
+    }    
+}
