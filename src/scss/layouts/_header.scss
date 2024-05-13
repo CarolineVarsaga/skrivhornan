@@ -1,4 +1,5 @@
 .header {
+    padding-bottom: 30px;
     @include flexCenter($ai: center, $jc: center, $fd: column, $gap: 10px);
     @include response(md) {
         @include flexCenter($ai: center, $jc: center, $fd: column, $gap: 30px);
