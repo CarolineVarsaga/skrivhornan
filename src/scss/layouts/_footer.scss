@@ -2,6 +2,10 @@
     padding-top: 30px;
     padding-bottom: 30px;
     @include flexCenter($ai: center, $jc: center, $fd: column, $gap: 30px);
+
+    @include response(md) { 
+        margin: 0; 
+    }
     
     .footer-container {
         width: 100%;
