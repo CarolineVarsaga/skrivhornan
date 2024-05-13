@@ -1,0 +1,59 @@
+
+.portfolio-landing {
+    .portfolio-landing-background {
+        padding-top: 30px; 
+        padding-bottom: 30px;
+        background-color: color(primary);
+        min-height: 100%;
+        @include flexCenter($ai: center, $jc: flex-start, $fd: column, $gap: 30px);
+
+        .portfolio-landing-heading {
+            font-size: size(xl);
+            font-weight: 400;
+        }
+
+        .portfolio-cardcomponent-container {
+            @include flexCenter($ai: center, $jc: center, $fd: column, $gap: 30px);
+            @include response(lg) {
+                @include flexCenter($ai: center, $jc: center, $fd: row, $gap: 50px);
+                flex-wrap: wrap;
+            }
+
+            .portfolio-cardcomponent {
+                @include flexCenter($ai: center, $jc: flex-start, $fd: column, $gap: 8px);
+                background-color: color(whiteColor);
+                height: 300px; 
+                width: 300px;
+                filter: drop-shadow(2px 2px 4px #00000080);
+                cursor: pointer;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+
+                .portfolio-cardcomponent-image-container {
+                    height: 300px;
+                    width: 100%;
+                    border: 1px solid blue; 
+                    overflow: hidden;
+
+                    & img {
+                        transition: transform 0.3s ease;
+                        width: 100%;
+                    }
+
+                    &:hover img {
+                        transform: scale(1.05);
+                    }
+
+                }
+
+                .portfolio-cardcomponent-heading {
+                    font-size: size(lg);
+                    padding-bottom: 10px; 
+                }
+            }
+        }
+    }
+}
