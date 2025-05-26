@@ -12,7 +12,7 @@
             font-weight: 400;
         }
 
-        .portfolio-cardcomponent-container {
+        .card-container {
             @include flexCenter($ai: center, $jc: center, $fd: column, $gap: 30px);
             @include response(lg) {
                 @include flexCenter($ai: center, $jc: center, $fd: row, $gap: 50px);
